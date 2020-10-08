@@ -1,8 +1,9 @@
-SRC = src/main.c
+SRC = src/operations.c\
+main.c
 
 INC = -Iinc
 
-PROJECT_NAME = SDLC_Activity
+PROJECT_NAME = operations.out
 
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
@@ -14,3 +15,4 @@ doc:
 
 clean:
 	rm -f $(PROJECT_NAME) 
+ 
